@@ -1,0 +1,191 @@
+.container {
+	display: grid;
+	grid-template-columns: 135px 1fr;
+	grid-template-rows: auto;
+	row-gap: 1.2em;
+	column-gap: 0.6em;
+}
+
+.transition {
+	border-top: 2px solid black;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+.bottomtransition {
+	border-bottom: 2px solid black;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.itemcut {
+	border-top: 1px solid black;
+	padding-top: 15px;
+	margin-top: 15px;
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.container div:nth-child(odd) {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.container > div > p {
+	margin-bottom: 0;
+}
+
+.list .container {
+	border-bottom: 1px solid gray;
+	padding-bottom: 1.2em;
+	margin-bottom: 1.2em;
+}
+
+.list .split {
+	border-top: none;
+}
+
+.list .split .container {
+	border-bottom: none;
+	padding-bottom: unset;
+	margin-bottom: auto;
+}
+
+.list .container:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.stagedirection {
+	font-style: italic;
+}
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+
+.subdesc {
+  padding-left: 44px ;
+}
+
+.split {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-auto-flow: column;
+	column-gap: 0.5em;
+	margin-bottom: 1.2em;
+	margin-top: 1.2em;
+	padding-bottom: 1em;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.splitheader {
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.splitending {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-auto-flow: column;
+	column-gap: 0.5em;
+}
+
+.splitending .solo {
+	grid-column: 1 / 2;
+}
+
+.splitending .paired {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+	align-self: center;
+}
+
+.splitending .solo:first-child {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.splitending .solo:nth-child(2) {
+	margin-bottom: 0;
+}
+
+.splitending.alt {	
+	grid-template-columns: 49% 49%;
+}
+
+.splitending.alt p {
+	padding-left: 22px;
+	margin-top: 0.5em;
+}
+
+.splitending p.endheader {
+	text-align: center;
+	font-style: italic;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+img {
+	display: block;
+	justify-content: center;
+	width: 480px;
+	height: 320px;
+	margin-bottom: 1.2em;
+	margin-top: 1.2em;
+}
+
+.container img {
+	margin: 0;
+}
+
+.inverted {
+	background-color: gray;
+	text-shadow: 1px 1px gray;
+	color: #f9f9f9;
+	border-radius: 5px;
+	padding: 0.5em;
+	width: max-content;
+	height: max-content;
+}
+
+ .wportrait {
+	display: grid;
+	grid-template-columns: 96px 1fr;
+	grid-template-rows: auto;
+	column-gap: 12px;
+}
+
+.wportrait img {
+	height: 80px;
+	width: 96px;
+}
+
+img.portrait {
+	height: 80px;
+	width: 96px;
+}
+
+.objectives {
+	display: grid;
+	grid-template-columns: 135px 1fr;
+	column-gap: 0.5em;
+	margin-left: 35%;
+}
+
+.objectives font:first-child {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+footer {
+	text-align: center;
+	font-size: 10pt;
+}
